@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Uikit</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+
+    <!-- FORM
+        .uk-input
+        .uk-select
+        .uk-textarea
+        .uk-radio
+        .uk-checkbox
+        .uk-range
+    -->
+
+    <form>
+
+        <legend class="uk-legend">Exemplos</legend>
+
+        <!-- INPUT -->
+        <div class="uk-margin">
+            <input class="uk-input" type="text" placeholder="Input">
+        </div>
+
+        <div class="uk-margin">
+            <input type="text" placeholder="Input">
+        </div>
+
+        <!-- SELECT -->
+        <div class="uk-margin">
+            <select class="uk-select">
+                <option>Option 01</option>
+                <option>Option 02</option>
+            </select>
+        </div>
+
+        <div class="uk-margin">
+            <select>
+                <option>Option 01</option>
+                <option>Option 02</option>
+            </select>
+        </div>
+
+        <!-- TEXTAREA -->
+        <div class="uk-margin">
+            <textarea class="uk-textarea" rows="5" placeholder="Textarea"></textarea>
+        </div>
+
+        <!-- RADIO -->
+        <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+            <label><input class="uk-radio" type="radio" name="radio2" checked> A</label>
+            <label><input class="uk-radio" type="radio" name="radio2"> B</label>
+        </div>
+
+        <!-- CHECKBOX -->
+        <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+            <label><input class="uk-checkbox" type="checkbox" checked> A</label>
+            <label><input class="uk-checkbox" type="checkbox"> B</label>
+        </div>
+        
+
+        <!-- RANGE -->
+        <div class="uk-margin">
+            <input class="uk-range" type="range" value="2" min="0" max="10" step="0.1">
+        </div>
+
+    </form>
+
+
+    <!-- <input> <select> <textarea> 
+    .uk-form-width-xsmall
+    .uk-form-width-small
+    .uk-form-width-medium
+    .uk-form-width-large -->
+    <div>
+        <input placeholder="input" type="text" class="uk-input uk-form-width-medium uk-form-width-medium">
+    </div>
+
+    <br>
+
+
+    <form>
+        <p>Upload de arquivos</p>
+        <div class="uk-margin" uk-margin>
+            <div uk-form-custom="target: true">
+                <input type="file">
+                <input class="uk-input uk-form-width-medium" type="text" placeholder="Select file" disabled>
+            </div>
+            <button class="uk-button uk-button-default">Submit</button>
+        </div>
+
+    </form>
+
+
+</body>
+
+</html>
