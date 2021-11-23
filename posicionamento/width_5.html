@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- UIkit CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.9.3/dist/css/uikit.min.css"
+    />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.3/dist/js/uikit-icons.min.js"></script>
+
+    <title>width</title>
+  </head>
+  <body>
+    <div class="uk-grid-match uk-grid-small uk-text-center" uk-grid>
+      <div class="uk-width-1-2@m">
+        <div class="uk-card uk-card-default uk-card-body">1-2@m</div>
+      </div>
+      <div class="uk-width-1-4@m">
+        <div class="uk-card uk-card-default uk-card-body">1-4@m</div>
+      </div>
+      <div class="uk-width-1-4@m">
+        <div class="uk-card uk-card-default uk-card-body">1-4@m</div>
+      </div>
+      <div class="uk-width-1-5@m uk-hidden@l">
+        <div class="uk-card uk-card-secondary uk-card-body">
+          1-5@m<br />hidden@l
+        </div>
+      </div>
+      <div class="uk-width-1-5@m uk-width-1-3@l">
+        <div class="uk-card uk-card-default uk-card-body">1-5@m<br />1-3@l</div>
+      </div>
+      <div class="uk-width-3-5@m uk-width-2-3@l">
+        <div class="uk-card uk-card-default uk-card-body">3-5@m<br />2-3@l</div>
+      </div>
+    </div>
+
+    <div class="uk-grid-match uk-grid-small uk-text-center" uk-grid>
+      <div class="uk-width-auto@m uk-visible@l">
+        <div class="uk-card uk-card-primary uk-card-body">
+          auto@m<br />visible@l
+        </div>
+      </div>
+      <div class="uk-width-1-3@m">
+        <div class="uk-card uk-card-default uk-card-body">1-3@m</div>
+      </div>
+      <div class="uk-width-expand@m">
+        <div class="uk-card uk-card-default uk-card-body">expand@m</div>
+      </div>
+    </div>
+  </body>
+</html>
